@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!--favicon-->>
+
+        <link rel="icon" href="favicon.ico">
+
+</head>
+<body>
+    <div class="container">
+    <h1>Squad Checking </h1>
+
+    <div class="content">
+
+        <form action="" id="add-cafe-form">
+            <input type="text" name="name" placeholder="Player name">
+            <input type="text" name="city" placeholder="Player time">
+            <button>Add</button>
+        </form>
+
+        <ul id="cafe-list"></ul>
+
+    </div>
+
+</div>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA_blUo4dS4zL4YaXcj6iasH3djdJU218Q",
+    authDomain: "test-41fd9.firebaseapp.com",
+    databaseURL: "https://test-41fd9.firebaseio.com",
+    projectId: "test-41fd9",
+    storageBucket: "test-41fd9.appspot.com",
+    messagingSenderId: "314668824608",
+    appId: "1:314668824608:web:c927be5a851cb383c92445",
+    measurementId: "G-TP9QLZGNJN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  db.settings({ timestampsInSnapshots: true });
+  firebase.analytics();
+</script>
+
+    <script src="app.js"></script>
+</body>
+</html>
